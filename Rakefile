@@ -18,7 +18,7 @@ Gem::PackageTask.new(@spec) do |t|
 end
 CLEAN.add 'pkg'
 
-require 'spec/rake/spectask'
+require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new do |t|
   t.rspec_opts = ['--color', '--require ./spec/helper']
 end
